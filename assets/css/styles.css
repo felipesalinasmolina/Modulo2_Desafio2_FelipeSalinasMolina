@@ -1,0 +1,76 @@
+* {
+  margin: 0;
+}
+
+main {
+  display: grid;
+  grid-template-areas: "nav nav" "aside section" "footer footer";
+  height: 100vh;
+  grid-template-columns: 15% auto;
+  grid-template-rows: 6% auto 6%;
+}
+
+h1{
+    color: white;
+}
+
+li{
+    color: white;
+}
+
+nav {
+  background-color: green;
+  grid-area: nav;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+aside {
+  background-color: rgb(9, 200, 9);
+  grid-area: aside;
+}
+
+section {
+  grid-area: section;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr 1fr;
+  padding: 0.5rem;
+}
+
+.cuadrado {
+  border: rgb(7, 162, 7) 4px solid;
+  min-height: 200px;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.grilla {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0.5rem;
+  justify-content: center;
+  align-items: center;
+}
+
+button {
+  border: none;
+  width: 80%;
+  background-color: rgb(7, 162, 7);
+  padding: 0.5rem;
+  margin-bottom: 0.5rem;
+  color:white;
+}
+
+footer {
+  background-color: green;
+  grid-area: footer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
